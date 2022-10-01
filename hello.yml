@@ -6,5 +6,5 @@ functions:
   hello:
     lang: python3
     handler: ./hello
-    image: gaithmtiri/hello2
+    image: gaithmtiri/hello
 
