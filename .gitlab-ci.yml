@@ -25,7 +25,7 @@ build:
 
     - curl -sSL https://cli.openfaas.com |  sh
 
-    - docker login docker.io  --username gaithmtiri --password OnePiece9816*
+    - docker login https://index.docker.io/v1/  --username gaithmtiri --password OnePiece9816*
     - faas-cli build -f helloo.yml
     #- faas-cli push -f helloo.yml
 
