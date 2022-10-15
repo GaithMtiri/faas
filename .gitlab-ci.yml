@@ -1,5 +1,5 @@
 default:
-  image: ubuntu
+  image: docker:latest
 
 stages:
 
