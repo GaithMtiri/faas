@@ -14,13 +14,14 @@ build:
   stage: build
 
   before_script:
+  - apk add eval
   - mkdir -p $HOME/.docker
   - eval $DOCKER_AUTH_CONFIG > $HOME/.docker/config.json
 
   script:
     - apk add curl
     - apk add git
-    - apk add eval
+    
 
     - curl -sSL https://cli.openfaas.com |  sh
 
