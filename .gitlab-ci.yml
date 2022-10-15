@@ -14,7 +14,6 @@ build:
   stage: build
 
   before_script:
-  - apk add eval
   - mkdir -p $HOME/.docker
   - eval $DOCKER_AUTH_CONFIG > $HOME/.docker/config.json
 
