@@ -16,6 +16,7 @@ build:
   before_script:
   - mkdir -p $HOME/.docker
   - echo $DOCKER_AUTH_CONFIG > $HOME/.docker/config.json
+  - cat $HOME/.docker/config.json
 
   script:
     - apk add curl
