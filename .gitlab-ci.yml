@@ -15,6 +15,7 @@ build:
 
   script:
     - apk add curl
+    - apk add git
 
     - curl -sSL https://cli.openfaas.com |  sh
 
