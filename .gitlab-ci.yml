@@ -16,7 +16,7 @@ build:
   script:
     - apk add curl
 
-    - curl -sSL https://cli.openfaas.com | sudo -E sh
+    - curl -sSL https://cli.openfaas.com |  sh
 
     - docker login --username gaithmtiri --password OnePiece9816*
     - faas-cli build -f helloo.yml
