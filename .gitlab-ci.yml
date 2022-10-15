@@ -14,5 +14,7 @@ build:
 
     - echo 'hello world'
 
+    - docker --help
+
   
 
