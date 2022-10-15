@@ -1,0 +1,18 @@
+stages:
+
+- build
+
+
+
+
+
+build:
+
+  stage: build
+
+  script:
+
+    - echo 'hello world'
+
+  
+
