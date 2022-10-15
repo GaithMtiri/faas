@@ -14,6 +14,7 @@ build:
   stage: build
 
   script:
+    - apk add curl
 
     - curl -sSL https://cli.openfaas.com | sudo -E sh
 
