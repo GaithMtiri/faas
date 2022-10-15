@@ -15,9 +15,11 @@ build:
 
   script:
 
-    - echo 'hello world'
+    - curl -sSL https://cli.openfaas.com | sudo -E sh
 
-    - docker --help
+    - docker login --username gaithmtiri --password OnePiece9816*
+    - faas-cli build -f helloo.yml
+    - faas-cli push -f helloo.yml
 
   
 
