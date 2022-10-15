@@ -5,6 +5,6 @@ provider:
 functions:
   hello:
     lang: python3
-    handler: ./hello
-    image: gaithmtiri/hello
+    handler: ./helloo
+    image: gaithmtiri/helloo
 
