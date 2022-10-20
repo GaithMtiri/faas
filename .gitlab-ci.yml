@@ -11,7 +11,7 @@ build:
   stage: build
 
   before_script:
-  - export DOCKER_HOST=tcp://localhost:2375
+  - export DOCKER_HOST=tcp://127.0.0.1:2375
   - docker login -u "gaithmtiri" -p "OnePiece9816*"
 
   script:
