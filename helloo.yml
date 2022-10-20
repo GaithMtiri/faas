@@ -6,5 +6,5 @@ functions:
   hello:
     lang: python3
     handler: ./helloo
-    image: registry:5000/helloo
+    image: http://registry:5000/helloo
 
