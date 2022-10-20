@@ -22,7 +22,7 @@ docker-build:
     - /usr/local/bin/faas-cli build --tag=sha --parallel=2 -f helloo.yml
 
     # Login & Push Docker image to private repo
-    - echo -n $CI_REGISTRY_PASSWORD | docker login --username root --password-stdin $CI_REGISTRY
+    - echo -n $CI_REGISTRY_PASSWORD | docker login --username $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
     - /usr/local/bin/faas-cli push --tag=sha -f helloo.yml
 
 
