@@ -10,8 +10,8 @@ build:
 
   stage: build
 
-  before_script:
-  - docker login -u "gaithmtiri" -p "OnePiece9816*"
+  # before_script:
+  # - docker login -u "gaithmtiri" -p "OnePiece9816*"
 
   script:
     # - apk add curl
