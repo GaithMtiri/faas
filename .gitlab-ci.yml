@@ -11,12 +11,11 @@ build:
   stage: build
 
   before_script:
-  - export DOCKER_HOST=tcp://127.0.0.1:2375
   - docker login -u "gaithmtiri" -p "OnePiece9816*"
 
   script:
-    - apk add curl
-    - apk add git
+    # - apk add curl
+    # - apk add git
     - echo "YOO"
     - docker info
     
