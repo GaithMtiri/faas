@@ -17,12 +17,12 @@ docker-build:
     - apk add curl
     - apk add git
     - echo "YOO"
-    # - docker info
+    - docker login registry:5000
     
 
     - curl -sSL https://cli.openfaas.com |  sh
 
-    - docker login --username gaithmtiri --password OnePiece9816* https://index.docker.io/v1/
+    # - docker login --username gaithmtiri --password OnePiece9816* https://index.docker.io/v1/
     - faas-cli build -f helloo.yml
     - faas-cli push -f helloo.yml
 
