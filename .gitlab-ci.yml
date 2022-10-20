@@ -6,7 +6,7 @@ docker-build:
   services:
    - name: docker:dind
      alias: thedockerhost
-     entrypoint: ["dockerd-entrypoint.sh", "--tls=false","--insecure-registry registry:5000"]
+     entrypoint: ["dockerd-entrypoint.sh", "--tls=false","--insecure-registry=registry:5000"]
 
   variables:
     DOCKER_HOST: tcp://thedockerhost:2375/
