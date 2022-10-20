@@ -6,8 +6,6 @@ docker-build:
   services:
    - name: docker:dind
      alias: thedockerhost
-     networks:
-      - "demo-esi_mynet"
 
   variables:
     DOCKER_HOST: tcp://thedockerhost:2375/
