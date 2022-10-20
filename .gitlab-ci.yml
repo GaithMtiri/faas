@@ -6,13 +6,12 @@ docker-build:
   services:
    - name: docker:dind
      alias: thedockerhost
-     entrypoint: ["dockerd-entrypoint.sh", "--tls=false"]
+     entrypoint: ["dockerd-entrypoint.sh", "--tls=false","--insecure-registry registry:5000"]
 
   variables:
     DOCKER_HOST: tcp://thedockerhost:2375/
     DOCKER_DRIVER: overlay2
     DOCKER_TLS_CERTDIR: ""
-    DOCKER_OPTS: "--insecure-registry registry:5000"
 
   script:
     - apk add curl
