@@ -19,11 +19,11 @@ docker-build:
     - if [ ! -f "/usr/local/bin/faas-cli" ] ; then apk add --no-cache curl git && curl -sSL cli.openfaas.com | sh && chmod +x /usr/local/bin/faas-cli && /usr/local/bin/faas-cli template pull && cp /usr/local/bin/faas-cli ./faas-cli ; fi
 
     # Build Docker image
-    - /usr/local/bin/faas-cli build --tag=sha --parallel=2
+    - /usr/local/bin/faas-cli build --tag=sha --parallel=2 -f helloo.yml
 
     # Login & Push Docker image to private repo
     - echo -n $CI_REGISTRY_PASSWORD | docker login --username root --password-stdin $CI_REGISTRY
-    - /usr/local/bin/faas-cli push --tag=sha
+    - /usr/local/bin/faas-cli push --tag=sha -f helloo.yml
 
 
 
