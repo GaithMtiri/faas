@@ -24,12 +24,12 @@ docker-build:
 
   script:
     # Download bash:
-    - apk add --no-cache bash python3
+    # - apk add --no-cache bash python3
     # GitLab has a built-in Docker image registry, whose parameters are set automatically.
     # See https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#using-the-gitlab-contai
     #
     # CHANGEME: You can use some other Docker registry though by changing the
     # login and image name.
-    - docker
+    - docker info
     # - docker build -t "$CI_REGISTRY_IMAGE" .
     # - docker push "$CI_REGISTRY_IMAGE"
